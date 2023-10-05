@@ -19,4 +19,4 @@ flush privileges;
 exit
 
 link del repositorio (privado):
-https://github.com/JohanTomas/Sistema-Operativo-Virtualizacion
+https://github.com/MichaellIbarra/SOV/tree/SOV---Base-de-datos-I
