@@ -1,22 +1,21 @@
 sudo apt update -y
 sudo apt upgrade -y
-sudo apr install mysql_server
-sudo su
-mysql_secure_installation
-sudo mysql -u root
+sudo apt install mysql-server -y
 sudo su
 -- passwd root
--- (admin)
--- (admin)
+-- (matichelo)
+-- (matichelo)
 exit
+sudo mysql_secure_installation
 N - Y - N - Y - Y
 sudo mysql -u root
 exit
 sudo mysql -u root -p
+-- (malasquez)
 create user 'matichelo'@'localhost' IDENTIFIED WITH mysql_native_password BY 'matichelo';
-GRANT ALL PRIVILEGES ON * . * TO 'malasquez'@'localhost';7
+GRANT ALL PRIVILEGES ON * . * TO 'matichelo'@'localhost';
 flush privileges;
 exit
 
-link del repositorio (privado):
-https://github.com/MichaellIbarra/SOV/tree/SOV---Base-de-datos-I
+link del repositorio:
+https://github.com/MichaellIbarra/SOV/blob/SOV---Base-de-datos-I/comandos.txt
