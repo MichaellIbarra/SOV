@@ -11,7 +11,7 @@ N - Y - N - Y - Y
 sudo mysql -u root
 exit
 sudo mysql -u root -p
--- (malasquez)
+-- (matichelo)
 create user 'matichelo'@'localhost' IDENTIFIED WITH mysql_native_password BY 'matichelo';
 GRANT ALL PRIVILEGES ON * . * TO 'matichelo'@'localhost';
 flush privileges;
