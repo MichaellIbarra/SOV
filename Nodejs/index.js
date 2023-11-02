@@ -8,8 +8,9 @@ app.use('/public', express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) =>{
     res.send('Conociendo Nodejs');
+    //res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(port, () =>{
-    console.log('Se esta ejecutando sobre el puerto', port)
+    console.log(`Servidor escuchando en http://localhost:${port}`)
 });
