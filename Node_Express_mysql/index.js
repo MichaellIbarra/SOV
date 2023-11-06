@@ -15,4 +15,12 @@ conex.connect((err)=>{
     }
 });
 
+conex.query('SELECT  * FROM actor', function(err,result, fields){
+    if(err) throw err;
+
+    result.forEach(result => {
+        console.log(result);
+        
+    });
+})
 conex.end();
