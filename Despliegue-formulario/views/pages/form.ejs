@@ -64,31 +64,25 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-      function validarFormulario() {
-          var nombre = document.getElementsByName('nombre_alumno')[0].value;
-          var email = document.getElementsByName('email_alumno')[0].value;
-          var dni = document.getElementsByName('dni_alumno')[0].value;
-          var celular = document.getElementsByName('celular_alumno')[0].value;
-          var direccion = document.getElementsByName('direccion_alumno')[0].value;
+        function validarFormulario() {
+            var nombre = document.getElementsByName('nombre_alumno')[0].value;
+            var email = document.getElementsByName('email_alumno')[0].value;
+            var dni = document.getElementsByName('dni_alumno')[0].value;
+            var celular = document.getElementsByName('celular_alumno')[0].value;
+            var direccion = document.getElementsByName('direccion_alumno')[0].value;
 
-          if (!nombre || !email || !dni || !celular || !direccion) {
-              Swal.fire({
-                  icon: 'error',
-                  title: 'Error',
-                  text: 'Todos los campos son obligatorios.',
-              });
-              return false; 
-          }
+            if (!nombre || !email || !dni || !celular || !direccion) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Todos los campos son obligatorios.',
+                });
+                return false; 
+            }
 
 
-          Swal.fire({
-              icon: 'success',
-              title: 'Éxito',
-              text: 'Formulario enviado correctamente.',
-          });
-
-          return true;
-      }
-  </script>
+            return true; 
+        }
+    </script>
   </body>
 </html>
