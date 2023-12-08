@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.form-container {
+    max-width: 300px;
+    background-color: chocolate;
+    margin: 50px auto;
+    border: 2px solid red;
+    
+}
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.register {
+    background-color: blue;
+}
+.consult {
+    background-color: red;
+}
+
+form{
+    padding: 20px;
+}
